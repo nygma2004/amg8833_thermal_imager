@@ -5,9 +5,9 @@ This was a "failed" experiment project to use an AMG8833 sensor, ESP32, MQTT and
 - ESP32 is also connected to a BME680 environment sensor (temperature, humidity, pressure, voletile gas compound) which is also send over MQTT every 10 seconds
 - MQTT data is read by Node-Red and the thermal image is displayed on the Dashboard
 - Rules can be defined that are evaluated for each image e.g. max or average temperature on the image, or part of the image.
-## Usefull links
+## Useful links
 - Youtube video explaining this entire project: https://youtu.be/o97A5IZ9Piw
-- Node-Red flow: xxxx
+- Node-Red flow: https://flows.nodered.org/flow/3a7822f76f9a0d18c5486b92b65228f0
 - AMG8833 sensor from Banggood: https://www.banggood.com/CJMCU-833-AMG8833-8x8-Thermal-Camera-IR-Infrared-Array-Thermal-Imaging-Sensor-Board-p-1268056.html
 - BME680 sensor: https://www.aliexpress.com/item/32961369966.html
 ## How does it looks like in Node-Red
