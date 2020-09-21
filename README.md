@@ -12,9 +12,13 @@ This was a "failed" experiment project to use an AMG8833 sensor, ESP32, MQTT and
 - BME680 sensor: https://www.aliexpress.com/item/32961369966.html
 ## How does it looks like in Node-Red
 The below screenshot shows an example of the Node-Red flow.
-![dashboard example](/noderedsnapshot.png)
+![Node Red snapshot](/image/noderedsnapshot.jpg)
 
 On the left side the actual thermal image is shown using a blue-red color pallette. That is getting auto scaled according to the measures values. The individual pixels show the exact measured values as well. On the middle the rule engine evalutes the different scenarios and provides a result based on the current image. "Am I at the desk" rule looks at the top right 4x4 pixels and checks if the average temparature is above 27C.
 ## Wiring
 Connected pins are detailed at the top of the Arduino sketch, but you can also see an picture of my breadboard below:
-![breadboard](/breadboard.png)
+![Breadboard](/image/breadboard.jpg)
+## Installation and Configuration
+Board configuration does not require any special settings, I just used the "ESP32 Dev Module".
+- In lines 22, 23, 24 there are 3 DEFINE statements, where you can change the update interval of the various sensors. Read the comments in the code for further details
+- Lines 34-42 specify settings like the Wifi credentials and also MQTT settings
